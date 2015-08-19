@@ -1,29 +1,42 @@
+/**
+ * This file is part of the Alfred package.
+ *
+ * (c) Mickael Gaillard <mick.gaillard@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 package com.alfred.ros.media.model;
 
 import java.util.List;
 
+/**
+ *
+ * @author Erwan Le Huitouze <erwan.lehuitouze@gmail.com>
+ *
+ */
 public class Movie extends Video {
     private int setid;
     private String set;
     private String plotoutline;
     private String sorttitle;
-    
+
     private List<String> showlink;
     private int top250;
     private String trailer;
     private List<String> country;
     private List<String> studio;
-    
+
     private List<String> tag;
     private String tagline;
     private String imdbnumber;
     private String mpaa;
-    
+
     /** @return A new {@link Movie} from the json stream. */
     public static Movie fromJson(String json) {
         return fromJson(json, Movie.class);
     }
-    
+
     public int getSetid() {
         return setid;
     }
@@ -48,7 +61,7 @@ public class Movie extends Video {
     public void setSorttitle(String sorttitle) {
         this.sorttitle = sorttitle;
     }
-    
+
     public List<String> getShowlink() {
         return showlink;
     }
@@ -79,7 +92,7 @@ public class Movie extends Video {
     public void setStudio(List<String> studio) {
         this.studio = studio;
     }
-    
+
     public List<String> getTag() {
         return tag;
     }

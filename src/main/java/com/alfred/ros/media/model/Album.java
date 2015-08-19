@@ -1,7 +1,20 @@
+/**
+ * This file is part of the Alfred package.
+ *
+ * (c) Mickael Gaillard <mick.gaillard@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 package com.alfred.ros.media.model;
 
 import java.util.List;
 
+/**
+ *
+ * @author Erwan Le Huitouze <erwan.lehuitouze@gmail.com>
+ *
+ */
 public class Album extends Audio {
     private List<String> theme;
     private String description;
@@ -11,12 +24,12 @@ public class Album extends Audio {
     private int playcount;
     private String albumlabel;
     private List<String> mood;
-    
+
     /** @return A new {@link Album} from the json stream. */
     public static Album fromJson(String json) {
         return fromJson(json, Album.class);
     }
-    
+
     public List<String> getTheme() {
         return theme;
     }

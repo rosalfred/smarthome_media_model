@@ -1,5 +1,18 @@
+/**
+ * This file is part of the Alfred package.
+ *
+ * (c) Mickael Gaillard <mick.gaillard@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 package com.alfred.ros.media.model;
 
+/**
+ *
+ * @author Erwan Le Huitouze <erwan.lehuitouze@gmail.com>
+ *
+ */
 public class Tvshow extends Video {
     private int episode;
     private int season;
@@ -8,12 +21,12 @@ public class Tvshow extends Video {
     private String showtitle;
     private String firstaired;
     private String productioncode;
-    
+
     /** @return A new {@link Tvshow} from the json stream. */
     public static Tvshow fromJson(String json) {
         return fromJson(json, Tvshow.class);
     }
-    
+
     public int getEpisode() {
         return episode;
     }

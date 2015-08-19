@@ -1,5 +1,18 @@
+/**
+ * This file is part of the Alfred package.
+ *
+ * (c) Mickael Gaillard <mick.gaillard@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 package com.alfred.ros.media.model;
 
+/**
+ *
+ * @author Erwan Le Huitouze <erwan.lehuitouze@gmail.com>
+ *
+ */
 public class Song extends Audio {
     private int songid;
     private int albumid;
@@ -9,22 +22,22 @@ public class Song extends Audio {
     //private String albumartist;
     private String musicbrainztrackid;
     private String musicbrainzartistid;
-    
-    
-    
-    
+
+
+
+
     private String lyrics;
     private String comment;
     private int duration;
-    
+
     private int disc;
     private int track;
-    
+
     /** @return A new {@link Song} from the json stream. */
     public static Song fromJson(String json) {
         return fromJson(json, Song.class);
     }
-    
+
     public int getSongid() {
         return songid;
     }
@@ -49,17 +62,17 @@ public class Song extends Audio {
     public void setMusicbrainztrackid(String musicbrainztrackid) {
         this.musicbrainztrackid = musicbrainztrackid;
     }
-    
+
     public String getMusicbrainzartistid() {
         return musicbrainzartistid;
     }
     public void setMusicbrainzartistid(String musicbrainzartistid) {
         this.musicbrainzartistid = musicbrainzartistid;
     }
-    
-    
-    
-    
+
+
+
+
     public String getLyrics() {
         return lyrics;
     }
@@ -78,7 +91,7 @@ public class Song extends Audio {
     public void setDuration(int duration) {
         this.duration = duration;
     }
-    
+
     public int getDisc() {
         return disc;
     }

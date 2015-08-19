@@ -1,10 +1,22 @@
+/**
+ * This file is part of the Alfred package.
+ *
+ * (c) Mickael Gaillard <mick.gaillard@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 package com.alfred.ros.media.model;
 
 import java.util.List;
 
 import com.google.gson.Gson;
 
-
+/**
+ *
+ * @author Erwan Le Huitouze <erwan.lehuitouze@gmail.com>
+ *
+ */
 public class Media {
     private int id;
     private int mediaid;
@@ -30,20 +42,20 @@ public class Media {
     private String votes;
     private int year;
     private List<String> genre;
-    
+
     /** @return A new {@link Media} from the json stream. */
     public static Media fromJson(String json) {
         return fromJson(json, Media.class);
     }
-    
+
     protected static <T extends Media> T fromJson(String json, Class<T> cls) {
         T result = null;
-        
+
         result = new Gson().fromJson(json, cls);
-        
+
         return result;
     }
-    
+
     public int getId() {
         return id;
     }
@@ -152,7 +164,7 @@ public class Media {
     public void setVotes(String votes) {
         this.votes = votes;
     }
-    
+
     public int getYear() {
         return year;
     }
@@ -165,7 +177,7 @@ public class Media {
     public void setGenre(List<String> genre) {
         this.genre = genre;
     }
-    
+
     /**
      * @return This {@link Media} serialized in json
      */
