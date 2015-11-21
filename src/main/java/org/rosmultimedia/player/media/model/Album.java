@@ -6,7 +6,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-package com.alfred.ros.media.model;
+package org.rosmultimedia.player.media.model;
 
 import java.util.List;
 

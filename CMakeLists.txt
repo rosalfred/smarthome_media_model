@@ -7,7 +7,7 @@ find_package(catkin REQUIRED rosjava_build_tools)
 catkin_rosjava_setup(publishMavenJavaPublicationToMavenRepository)
 
 catkin_package()
-set(PACKAGE_PATH "com/alfred/ros")
+set(PACKAGE_PATH "org/rosmultimedia/player")
 
 install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_MAVEN_DESTINATION}/${PACKAGE_PATH}/${PROJECT_NAME}/
     DESTINATION ${CATKIN_GLOBAL_MAVEN_DESTINATION}/${PACKAGE_PATH}/${PROJECT_NAME})
