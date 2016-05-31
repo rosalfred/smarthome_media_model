@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(media_model)
+project(smarthome_media_model)
 
 find_package(catkin REQUIRED rosjava_build_tools)
 
