@@ -5,29 +5,15 @@
   <name>smarthome_media_model</name>
   <version>0.2.0</version>
   <description>This package is Media model for RosJava.</description>
-  <maintainer email="erwan.lehuitouze@gmail.com">Erwan Le Huitouze</maintainer>
+
   <maintainer email="mick.gaillard@gmail.com">Mickael Gaillard</maintainer>
+  <maintainer email="erwan.lehuitouze@gmail.com">Erwan Le Huitouze</maintainer>
+  <author email="mick.gaillard@gmail.com">Mickael Gaillard</author>
+  <author email="erwan.lehuitouze@gmail.com">Erwan Le Huitouze</author>
+
   <license>GPLv3</license>
   <url type="website">https://support.tactfactory.com/projects/medialfred/wiki/Wiki</url>
 
-
-  <!-- Author tags are optional, mutiple are allowed, one per tag -->
-  <!-- Authors do not have to be maintianers, but could be -->
-  <!-- Example: -->
-  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
-
-
-  <!-- The *_depend tags are used to specify dependencies -->
-  <!-- Dependencies can be catkin packages or system dependencies -->
-  <!-- Examples: -->
-  <!-- Use build_depend for packages you need at compile time: -->
-  <!--   <build_depend>message_generation</build_depend> -->
-  <!-- Use buildtool_depend for build tool packages: -->
-  <!--   <buildtool_depend>catkin</buildtool_depend> -->
-  <!-- Use run_depend for packages you need at runtime: -->
-  <!--   <run_depend>message_runtime</run_depend> -->
-  <!-- Use test_depend for packages you need only for testing: -->
-  <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_export_jars</buildtool_depend>
   <buildtool_depend>ament_build_type_gradle</buildtool_depend>
@@ -37,18 +23,10 @@
 
   <build_depend>rcljava</build_depend>
 
-  <exec_depend>rosidl_generator_java</exec_depend>
-  <exec_depend>rcljava</exec_depend>
   <!--run_depend>libgoogle-gson-java</run_depend-->
 
-  <!-- The export tag contains other, unspecified, tags -->
   <export>
     <architecture_independent/>
     <build_type>ament_gradle</build_type>
-    <!-- You can specify that this package is a metapackage here: -->
-    <!-- <metapackage/> -->
-
-    <!-- Other tools can request additional information be placed here -->
-
   </export>
 </package>
